@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-// Start
-//start2
+
 @main
 struct PocketNewsApp: App {
     var body: some Scene {
