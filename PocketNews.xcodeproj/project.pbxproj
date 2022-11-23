@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6658E36C292EAF650055F8D5 /* URL + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E36B292EAF650055F8D5 /* URL + Extension.swift */; };
+		6658E36F292EB9850055F8D5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E36E292EB9850055F8D5 /* News.swift */; };
 		66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AB292D62570001E740 /* PocketNewsApp.swift */; };
 		66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AD292D62570001E740 /* PocketNewsListView.swift */; };
 		66F992B0292D62590001E740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F992AF292D62590001E740 /* Assets.xcassets */; };
@@ -16,7 +18,6 @@
 		66F992C9292D62590001E740 /* PocketNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */; };
 		66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992D7292D76C40001E740 /* PocketNewsController.swift */; };
 		66F992DB292D824F0001E740 /* NytAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992DA292D824F0001E740 /* NytAPI.swift */; };
-		FE9EFC92292E28BF00BD62C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66F992DC292D84990001E740 /* Info.plist */; };
 		FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6658E36B292EAF650055F8D5 /* URL + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + Extension.swift"; sourceTree = "<group>"; };
+		6658E36E292EB9850055F8D5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		6658E370292EBB510055F8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F992A8292D62570001E740 /* PocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F992AB292D62570001E740 /* PocketNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsApp.swift; sourceTree = "<group>"; };
 		66F992AD292D62570001E740 /* PocketNewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsListView.swift; sourceTree = "<group>"; };
@@ -50,7 +54,6 @@
 		66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		66F992D7292D76C40001E740 /* PocketNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsController.swift; sourceTree = "<group>"; };
 		66F992DA292D824F0001E740 /* NytAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytAPI.swift; sourceTree = "<group>"; };
-		66F992DC292D84990001E740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,9 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6658E36A292EAF490055F8D5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6658E36B292EAF650055F8D5 /* URL + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6658E36D292EB6E20055F8D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6658E36E292EB9850055F8D5 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		66F9929F292D62570001E740 = {
 			isa = PBXGroup;
 			children = (
+				6658E370292EBB510055F8D5 /* Info.plist */,
 				66F992AA292D62570001E740 /* PocketNews */,
 				66F992BB292D62590001E740 /* PocketNewsTests */,
 				66F992C5292D62590001E740 /* PocketNewsUITests */,
@@ -102,8 +122,8 @@
 		66F992AA292D62570001E740 /* PocketNews */ = {
 			isa = PBXGroup;
 			children = (
-				FE9EFC95292E597300BD62C6 /* Extension */,
-				66F992DC292D84990001E740 /* Info.plist */,
+				6658E36D292EB6E20055F8D5 /* Model */,
+				6658E36A292EAF490055F8D5 /* Extension */,
 				66F992D9292D81FF0001E740 /* Service */,
 				66F992AB292D62570001E740 /* PocketNewsApp.swift */,
 				66F992D5292D72CB0001E740 /* View */,
@@ -162,13 +182,6 @@
 				FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		FE9EFC95292E597300BD62C6 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +290,6 @@
 			files = (
 				66F992B3292D62590001E740 /* Preview Assets.xcassets in Resources */,
 				66F992B0292D62590001E740 /* Assets.xcassets in Resources */,
-				FE9EFC92292E28BF00BD62C6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +318,9 @@
 				66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */,
 				FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */,
 				66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */,
+				6658E36F292EB9850055F8D5 /* News.swift in Sources */,
 				66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */,
+				6658E36C292EAF650055F8D5 /* URL + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,8 +485,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PocketNews/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -501,8 +514,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PocketNews/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

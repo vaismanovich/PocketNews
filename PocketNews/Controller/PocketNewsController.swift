@@ -13,7 +13,7 @@ final class PocketNewsController: ObservableObject {
     @Published private(set) var isLoading = false
     @Published var error: Error?
     
-    @AppStorage(AppStorageKeys.method.rawValue) var method
+    
 }
 
 

@@ -2,7 +2,7 @@
 //  NytAPI.swift
 //  PocketNews
 //
-//  Created by Мария Шувалова on 23.11.2022.
+//  Created by Vitaliy Vaisman on 23.11.2022.
 //
 
 import Foundation
@@ -36,15 +36,12 @@ final class NytAPI: NytAPIFetchable {
     private func makeURL(for method: Method, period: Method.Period) -> URL? {
         let fullPath = method.path + period.path
         
-        var url =  URL(scheme: <#T##String#>, host: <#T##String#>, path: <#T##String#>, parameters: <#T##[String : String]?#>)
+    var url = URL(scheme: scheme,
+                  host: host,
+                  path: fullPath,
+                  parameters: ["api-key": apiKey])
         
-        
-        var url2 = URL(scheme:      scheme,
-                      host:         host,
-                      path:         fullPath,
-                      parameters:   ["api-key": apiKey])
-        
-        url.appendPathExtension(apiExtension)
+        url?.appendPathExtension(apiExtension)
         return url
     }
     
