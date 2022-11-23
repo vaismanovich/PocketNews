@@ -16,6 +16,8 @@
 		66F992C9292D62590001E740 /* PocketNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */; };
 		66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992D7292D76C40001E740 /* PocketNewsController.swift */; };
 		66F992DB292D824F0001E740 /* NytAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992DA292D824F0001E740 /* NytAPI.swift */; };
+		FE9EFC92292E28BF00BD62C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66F992DC292D84990001E740 /* Info.plist */; };
+		FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		66F992D7292D76C40001E740 /* PocketNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsController.swift; sourceTree = "<group>"; };
 		66F992DA292D824F0001E740 /* NytAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytAPI.swift; sourceTree = "<group>"; };
 		66F992DC292D84990001E740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		66F992AA292D62570001E740 /* PocketNews */ = {
 			isa = PBXGroup;
 			children = (
+				FE9EFC95292E597300BD62C6 /* Extension */,
 				66F992DC292D84990001E740 /* Info.plist */,
 				66F992D9292D81FF0001E740 /* Service */,
 				66F992AB292D62570001E740 /* PocketNewsApp.swift */,
@@ -155,8 +159,16 @@
 			isa = PBXGroup;
 			children = (
 				66F992DA292D824F0001E740 /* NytAPI.swift */,
+				FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		FE9EFC95292E597300BD62C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +277,7 @@
 			files = (
 				66F992B3292D62590001E740 /* Preview Assets.xcassets in Resources */,
 				66F992B0292D62590001E740 /* Assets.xcassets in Resources */,
+				FE9EFC92292E28BF00BD62C6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +304,7 @@
 			files = (
 				66F992DB292D824F0001E740 /* NytAPI.swift in Sources */,
 				66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */,
+				FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */,
 				66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */,
 				66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */,
 			);

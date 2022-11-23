@@ -7,14 +7,13 @@
 
 import Foundation
 import Combine
-import SwiftUI
 
 protocol NytAPIFetchable {
-    func fetch() -> AnyPublisher<Data, Error>
+    func fetch(method: NytAPI.Method, period: NytAPI.Method.Period) -> AnyPublisher<Data, Error>
 }
 
 final class NytAPI: NytAPIFetchable {
-    private let apiKey = "" //will set here API key in future
+    private let apiKey = "2pxffUsNNhwYPfnuQB7OnF1gKy9jQ18B" //will set here API key in future
     private let scheme = "https"
     private let host = "api.nytimes.com"
     
@@ -22,6 +21,40 @@ final class NytAPI: NytAPIFetchable {
     private let urlRequestTimeoutInterval: TimeInterval = 5
     private let networkFetchingQueue = DispatchQueue(label: "networkFetching")
     
+    func fetch(method: Method, period: Method.Period) -> AnyPublisher<Data, Error> {
+        guard let request = makeURLRequest(method: method, period: period) else {
+            return Fail(error: NetworkErrors.wrongURL)
+                .eraseToAnyPublisher()
+        }
+
+        return URLSession.shared.dataTaskPublisher(for: request)
+            .subscribe(on: networkFetchingQueue)
+            .tryMap(NetworkErrors.processResponse)
+            .eraseToAnyPublisher()
+    }
+    
+    private func makeURL(for method: Method, period: Method.Period) -> URL? {
+        let fullPath = method.path + period.path
+        
+        var url =  URL(scheme: <#T##String#>, host: <#T##String#>, path: <#T##String#>, parameters: <#T##[String : String]?#>)
+        
+        
+        var url2 = URL(scheme:      scheme,
+                      host:         host,
+                      path:         fullPath,
+                      parameters:   ["api-key": apiKey])
+        
+        url.appendPathExtension(apiExtension)
+        return url
+    }
+    
+  
+    private func makeURLRequest(method: Method, period: Method.Period) -> URLRequest? {
+        guard let url = makeURL(for: method, period: period) else {return nil}
+        
+        return URLRequest(url: url,
+                            timeoutInterval: urlRequestTimeoutInterval)
+    }
    
 }
 
@@ -62,5 +95,12 @@ extension NytAPI.Method {
 }
 
 extension NytAPI.Method.Period: CustomStringConvertible {
-    var
+    var description: String {
+        switch self {
+        case .day, .week:
+            return "of the " + self.rawValue
+        case .month:
+            return "in a " + self.rawValue
+        }
+    }
 }
