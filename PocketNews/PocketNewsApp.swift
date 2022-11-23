@@ -11,7 +11,7 @@ import SwiftUI
 struct PocketNewsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PocketNewsListView()
         }
     }
 }

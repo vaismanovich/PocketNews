@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AB292D62570001E740 /* PocketNewsApp.swift */; };
-		66F992AE292D62570001E740 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AD292D62570001E740 /* ContentView.swift */; };
+		66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AD292D62570001E740 /* PocketNewsListView.swift */; };
 		66F992B0292D62590001E740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F992AF292D62590001E740 /* Assets.xcassets */; };
 		66F992B3292D62590001E740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F992B2292D62590001E740 /* Preview Assets.xcassets */; };
 		66F992BD292D62590001E740 /* PocketNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992BC292D62590001E740 /* PocketNewsTests.swift */; };
 		66F992C7292D62590001E740 /* PocketNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992C6292D62590001E740 /* PocketNewsUITests.swift */; };
 		66F992C9292D62590001E740 /* PocketNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */; };
+		66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992D7292D76C40001E740 /* PocketNewsController.swift */; };
+		66F992DB292D824F0001E740 /* NytAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992DA292D824F0001E740 /* NytAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		66F992A8292D62570001E740 /* PocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F992AB292D62570001E740 /* PocketNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsApp.swift; sourceTree = "<group>"; };
-		66F992AD292D62570001E740 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66F992AD292D62570001E740 /* PocketNewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsListView.swift; sourceTree = "<group>"; };
 		66F992AF292D62590001E740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F992B2292D62590001E740 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66F992B8292D62590001E740 /* PocketNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,9 @@
 		66F992C2292D62590001E740 /* PocketNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F992C6292D62590001E740 /* PocketNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsUITests.swift; sourceTree = "<group>"; };
 		66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66F992D7292D76C40001E740 /* PocketNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsController.swift; sourceTree = "<group>"; };
+		66F992DA292D824F0001E740 /* NytAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NytAPI.swift; sourceTree = "<group>"; };
+		66F992DC292D84990001E740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,11 @@
 		66F992AA292D62570001E740 /* PocketNews */ = {
 			isa = PBXGroup;
 			children = (
+				66F992DC292D84990001E740 /* Info.plist */,
+				66F992D9292D81FF0001E740 /* Service */,
 				66F992AB292D62570001E740 /* PocketNewsApp.swift */,
-				66F992AD292D62570001E740 /* ContentView.swift */,
+				66F992D5292D72CB0001E740 /* View */,
+				66F992D6292D76470001E740 /* Controller */,
 				66F992AF292D62590001E740 /* Assets.xcassets */,
 				66F992B1292D62590001E740 /* Preview Content */,
 			);
@@ -125,6 +133,30 @@
 				66F992C8292D62590001E740 /* PocketNewsUITestsLaunchTests.swift */,
 			);
 			path = PocketNewsUITests;
+			sourceTree = "<group>";
+		};
+		66F992D5292D72CB0001E740 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66F992AD292D62570001E740 /* PocketNewsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66F992D6292D76470001E740 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66F992D7292D76C40001E740 /* PocketNewsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66F992D9292D81FF0001E740 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				66F992DA292D824F0001E740 /* NytAPI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F992AE292D62570001E740 /* ContentView.swift in Sources */,
+				66F992DB292D824F0001E740 /* NytAPI.swift in Sources */,
+				66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */,
+				66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */,
 				66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +456,7 @@
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +486,7 @@
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketNews/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
