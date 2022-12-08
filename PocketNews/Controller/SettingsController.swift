@@ -36,7 +36,7 @@ final class SettingsController: ObservableObject {
         setNewsCacheSize()
     }
     
-    func deleteImageCache() {
+    func deleteImagesCache() {
         removeCache(at: .images)
         setImagesCacheSize()
     }

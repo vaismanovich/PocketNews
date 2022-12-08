@@ -17,8 +17,8 @@ struct CacheCellview: View {
             Text(title)
             Text(size)
             Spacer()
-            Button("DELETE", role: .destructive, action: action)
-                .background(.cyan)
+            Button("Delete", role: .destructive, action: action)
+                //.background(.cyan)
                 .shadow(radius: 7)
                 
             
