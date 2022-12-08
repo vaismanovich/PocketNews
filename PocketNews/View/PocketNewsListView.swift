@@ -14,8 +14,11 @@ struct PocketNewsListView: View {
     
     
     var body: some View {
-        Text("Hello, world!")
+        Text("App is under construction")
             .padding()
+            .background(.yellow)
+            .foregroundColor(.blue)
+            .frame(maxWidth: .infinity)
     }
 }
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6636DF92293FE74900AA7EF1 /* absenseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF91293FE74900AA7EF1 /* absenseImageView.swift */; };
+		6636DF94293FE86A00AA7EF1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF93293FE86A00AA7EF1 /* SettingsController.swift */; };
+		6636DF962942189200AA7EF1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF952942189200AA7EF1 /* Cache.swift */; };
+		66515AFE2932167200879315 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66515AFD2932167200879315 /* ErrorView.swift */; };
 		6658E36C292EAF650055F8D5 /* URL + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E36B292EAF650055F8D5 /* URL + Extension.swift */; };
 		6658E36F292EB9850055F8D5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658E36E292EB9850055F8D5 /* News.swift */; };
 		66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F992AB292D62570001E740 /* PocketNewsApp.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6636DF91293FE74900AA7EF1 /* absenseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absenseImageView.swift; sourceTree = "<group>"; };
+		6636DF93293FE86A00AA7EF1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		6636DF952942189200AA7EF1 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		66515AFD2932167200879315 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		6658E36B292EAF650055F8D5 /* URL + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + Extension.swift"; sourceTree = "<group>"; };
 		6658E36E292EB9850055F8D5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		6658E370292EBB510055F8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				66F992AD292D62570001E740 /* PocketNewsListView.swift */,
+				66515AFD2932167200879315 /* ErrorView.swift */,
+				6636DF91293FE74900AA7EF1 /* absenseImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				66F992D7292D76C40001E740 /* PocketNewsController.swift */,
+				6636DF93293FE86A00AA7EF1 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 			children = (
 				66F992DA292D824F0001E740 /* NytAPI.swift */,
 				FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */,
+				6636DF952942189200AA7EF1 /* Cache.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -315,12 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F992DB292D824F0001E740 /* NytAPI.swift in Sources */,
+				6636DF92293FE74900AA7EF1 /* absenseImageView.swift in Sources */,
 				66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */,
 				FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */,
+				6636DF962942189200AA7EF1 /* Cache.swift in Sources */,
 				66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */,
 				6658E36F292EB9850055F8D5 /* News.swift in Sources */,
+				6636DF94293FE86A00AA7EF1 /* SettingsController.swift in Sources */,
 				66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */,
 				6658E36C292EAF650055F8D5 /* URL + Extension.swift in Sources */,
+				66515AFE2932167200879315 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

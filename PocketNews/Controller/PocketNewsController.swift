@@ -2,7 +2,7 @@
 //  PocketNewsController.swift
 //  PocketNews
 //
-//  Created by Мария Шувалова on 22.11.2022.
+//  Created by Vitaliy Vaisman on 22.11.2022.
 //
 
 import SwiftUI
