@@ -1,5 +1,5 @@
 //
-//  absenseImageView.swift
+//  AbsenseImageView.swift
 //  PocketNews
 //
 //  Created by Vitaliy Vaisman on 06.12.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct absenseImageView: View {
+struct AbsenseImageView: View {
     var body: some View {
         Image(systemName: "photo")
             .resizable()
@@ -19,8 +19,8 @@ struct absenseImageView: View {
     }
 }
 
-struct absenseImageView_Previews: PreviewProvider {
+struct AbsenseImageView_Previews: PreviewProvider {
     static var previews: some View {
-        absenseImageView()
+        AbsenseImageView()
     }
 }
