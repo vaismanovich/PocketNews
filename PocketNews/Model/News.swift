@@ -13,25 +13,13 @@ struct Response: Codable {
 
 struct News: Identifiable {
     let id:        Int
-    let published: Date
     let url:       URL
+    let published: Date
     let author:    String
     let title:     String
     let subtitle:  String
     var thumbnail: URL?
     var image:     URL?
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case published = "publishedDate"
-        case url
-        case author = "byline"
-        case title
-        case subtitle = "abstract"
-        case thumbnail
-        case image
-        case media
-    }
 }
 
 extension News: Equatable {
@@ -41,6 +29,17 @@ extension News: Equatable {
 }
 
 extension News: Codable {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case url
+        case published =  "publishedDate"  //"publishedDate"
+        case author = "byline"
+        case title
+        case subtitle = "abstract"
+        case thumbnail
+        case image
+        case media
+    }
   
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

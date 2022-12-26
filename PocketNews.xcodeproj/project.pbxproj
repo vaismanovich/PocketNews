@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661DC77F2955000C00615B6C /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DC77E2955000C00615B6C /* NewsView.swift */; };
+		661DC7812955037100615B6C /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DC7802955037100615B6C /* ExampleData.swift */; };
+		661DC7832957393000615B6C /* NewsListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DC7822957393000615B6C /* NewsListCellView.swift */; };
 		6636DF92293FE74900AA7EF1 /* absenseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF91293FE74900AA7EF1 /* absenseImageView.swift */; };
 		6636DF94293FE86A00AA7EF1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF93293FE86A00AA7EF1 /* SettingsController.swift */; };
 		6636DF962942189200AA7EF1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6636DF952942189200AA7EF1 /* Cache.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661DC77E2955000C00615B6C /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		661DC7802955037100615B6C /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		661DC7822957393000615B6C /* NewsListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCellView.swift; sourceTree = "<group>"; };
 		6636DF91293FE74900AA7EF1 /* absenseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absenseImageView.swift; sourceTree = "<group>"; };
 		6636DF93293FE86A00AA7EF1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		6636DF952942189200AA7EF1 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
@@ -57,7 +63,6 @@
 		66515AFD2932167200879315 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		6658E36B292EAF650055F8D5 /* URL + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + Extension.swift"; sourceTree = "<group>"; };
 		6658E36E292EB9850055F8D5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		6658E370292EBB510055F8D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F992A8292D62570001E740 /* PocketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F992AB292D62570001E740 /* PocketNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsApp.swift; sourceTree = "<group>"; };
 		66F992AD292D62570001E740 /* PocketNewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketNewsListView.swift; sourceTree = "<group>"; };
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				6658E36E292EB9850055F8D5 /* News.swift */,
+				FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,8 +141,6 @@
 		66F9929F292D62570001E740 = {
 			isa = PBXGroup;
 			children = (
-				6658E370292EBB510055F8D5 /* Info.plist */,
-				66F992AB292D62570001E740 /* PocketNewsApp.swift */,
 				66F992AA292D62570001E740 /* PocketNews */,
 				66F992BB292D62590001E740 /* PocketNewsTests */,
 				66F992C5292D62590001E740 /* PocketNewsUITests */,
@@ -157,11 +161,12 @@
 		66F992AA292D62570001E740 /* PocketNews */ = {
 			isa = PBXGroup;
 			children = (
+				66F992AB292D62570001E740 /* PocketNewsApp.swift */,
 				6658E36D292EB6E20055F8D5 /* Model */,
-				6658E36A292EAF490055F8D5 /* Extension */,
 				66F992D9292D81FF0001E740 /* Service */,
 				66F992D5292D72CB0001E740 /* View */,
 				66F992D6292D76470001E740 /* Controller */,
+				6658E36A292EAF490055F8D5 /* Extension */,
 				66F992AF292D62590001E740 /* Assets.xcassets */,
 				66F992B1292D62590001E740 /* Preview Content */,
 			);
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				66F992B2292D62590001E740 /* Preview Assets.xcassets */,
+				661DC7802955037100615B6C /* ExampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				66F992AD292D62570001E740 /* PocketNewsListView.swift */,
+				661DC7822957393000615B6C /* NewsListCellView.swift */,
+				661DC77E2955000C00615B6C /* NewsView.swift */,
 				66515AFD2932167200879315 /* ErrorView.swift */,
 				6636DF9A294278EC00AA7EF1 /* Settings */,
 				6636DF972942701900AA7EF1 /* Image */,
@@ -218,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				66F992DA292D824F0001E740 /* NytAPI.swift */,
-				FE9EFC93292E383100BD62C6 /* NetworkErrors.swift */,
 				6636DF952942189200AA7EF1 /* Cache.swift */,
 			);
 			path = Service;
@@ -355,16 +362,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F992DB292D824F0001E740 /* NytAPI.swift in Sources */,
+				661DC77F2955000C00615B6C /* NewsView.swift in Sources */,
 				6636DF92293FE74900AA7EF1 /* absenseImageView.swift in Sources */,
 				66F992AE292D62570001E740 /* PocketNewsListView.swift in Sources */,
 				FE9EFC94292E383100BD62C6 /* NetworkErrors.swift in Sources */,
 				6636DF962942189200AA7EF1 /* Cache.swift in Sources */,
+				661DC7812955037100615B6C /* ExampleData.swift in Sources */,
 				66F992D8292D76C40001E740 /* PocketNewsController.swift in Sources */,
 				663A0A1629492FCE006A51A3 /* CacheImageView.swift in Sources */,
 				6658E36F292EB9850055F8D5 /* News.swift in Sources */,
 				6636DF94293FE86A00AA7EF1 /* SettingsController.swift in Sources */,
 				66F992AC292D62570001E740 /* PocketNewsApp.swift in Sources */,
 				6636DF992942706000AA7EF1 /* CacheCellview.swift in Sources */,
+				661DC7832957393000615B6C /* NewsListCellView.swift in Sources */,
 				6658E36C292EAF650055F8D5 /* URL + Extension.swift in Sources */,
 				66515AFE2932167200879315 /* ErrorView.swift in Sources */,
 				663A0A14294901A2006A51A3 /* CacheImageController.swift in Sources */,
@@ -555,7 +565,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PocketNews/PocketNewsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PocketNews/Preview Content\"";

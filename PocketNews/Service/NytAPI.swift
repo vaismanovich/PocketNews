@@ -13,7 +13,7 @@ protocol NytAPIFetchable {
 }
 
 final class NytAPI: NytAPIFetchable {
-    private let apiKey = "2pxffUsNNhwYPfnuQB7OnF1gKy9jQ18B" //will set here API key in future
+    private let apiKey = "Lruo4NXPgGqkJbQgj2iRrXKn2bBXdZjG" //will set here API key in future
     private let scheme = "https"
     private let host = "api.nytimes.com"
     

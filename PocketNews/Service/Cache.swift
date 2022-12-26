@@ -6,8 +6,7 @@
 //
 
 import Foundation
-//import UIKit
-//import UIKit.UIImage
+import UIKit.UIImage
 
 protocol Cacheable {
     var directoryURL: URL {get}
